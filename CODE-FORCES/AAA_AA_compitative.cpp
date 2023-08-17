@@ -99,24 +99,43 @@ const int eps = 1e-9;
   * ****************************  Main Function ******************************************
 */
 
+
+int gcd(int a, int b)
+{
+    // Everything divides 0
+    if (a == 0)
+        return b;
+    if (b == 0)
+        return a;
+ 
+    // Base case
+    if (a == b)
+        return a;
+ 
+    // a is greater
+    if (a > b)
+        return gcd(a - b, b);
+    return gcd(a, b - a);
+}
+ 
+
 int main()
 {
     fast;
       
-    int t;
-    cin>>t;
-    int a=0,b=0,c=0;
-    int x,y,z;
-    while (t--)
-    {
-       cin>>x>>y>>z;
-       a=a+x;
-       b=b+y;
-       c=c+z; 
-    }
+   
+
+  vector<int>vec{5,78,3,5,822,52};
+  sort(vec.rbegin(),vec.rend());
+
+  for(auto it:vec)
+  {
+    cout<<it<<" ";
+  }
 
 
-    (a==0 && b==0 && c==0) ? cout<<"YES\n" : cout<<"NO\n";
+   
+   
     
    
 
