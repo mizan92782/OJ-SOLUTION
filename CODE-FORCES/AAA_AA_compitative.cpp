@@ -124,18 +124,32 @@ int main()
     fast;
       
    
+   int t;cin>>t;
+   while (t--)
+   {
+      int n;
+      cin>>n;
+      vector<int>arr(n);
+      for(int i=0;i<n;i++)
+      {
+         cin>>arr[i];
+      }
 
-  vector<int>vec{5,78,3,5,822,52};
-  sort(vec.rbegin(),vec.rend());
+         
 
-  for(auto it:vec)
-  {
-    cout<<it<<" ";
-  }
+      if(n==1)
+      {
+        cout<<arr[0]<<endl;
+      }else{
+         
+         sort(all(arr));
+
+      }
 
 
+   }
    
-   
+ 
     
    
 
