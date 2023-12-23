@@ -22,7 +22,7 @@ int main()
 
       map<char,int>mymap;
 
-
+       
       for(int i=0;i<n;i++)
       {
         mymap[str[i]]++;
